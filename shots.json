@@ -1,1 +1,28 @@
-{"shots":[{"file":"1-dashboard.png","height":900,"view":"Beranda 1280x900: sisa bulan ini, KPI, grafik 6 bulan, donat kategori","width":1280},{"file":"2-transaksi.png","height":900,"view":"Halaman Transaksi 1280x900: form tambah, pencarian, tabel 35 transaksi","width":1280},{"file":"3-anggaran.png","height":900,"view":"Halaman Anggaran 1280x900: 8 kartu kategori dengan bilah kemajuan","width":1280},{"file":"4-phone.png","height":844,"view":"Beranda di ukuran telepon 390x844: navigasi dan KPI menumpuk rapi","width":390}]}
+{
+  "shots": [
+    {
+      "file": "1-dashboard.png",
+      "height": 900,
+      "view": "Beranda 1280x900: sisa bulan ini, KPI, grafik 6 bulan, donat kategori",
+      "width": 1280
+    },
+    {
+      "file": "2-transaksi.png",
+      "height": 900,
+      "view": "Halaman Transaksi 1280x900: form tambah, pencarian, tabel 35 transaksi",
+      "width": 1280
+    },
+    {
+      "file": "3-laporan.png",
+      "height": 900,
+      "view": "Halaman Laporan 1280x900: tabel 6 bulan, per kategori vs anggaran, tiga bulan paling hemat",
+      "width": 1280
+    },
+    {
+      "file": "4-phone.png",
+      "height": 844,
+      "view": "Beranda di ukuran telepon 390x844: navigasi dan KPI menumpuk rapi",
+      "width": 390
+    }
+  ]
+}
