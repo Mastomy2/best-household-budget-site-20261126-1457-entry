@@ -13,15 +13,15 @@
       "width": 1280
     },
     {
-      "file": "3-laporan.png",
+      "file": "3-anggaran.png",
       "height": 900,
-      "view": "Halaman Laporan 1280x900: tabel 6 bulan, per kategori vs anggaran, tiga bulan paling hemat",
+      "view": "Halaman Anggaran 1280x900: 8 kartu kategori dengan bilah progres dan status",
       "width": 1280
     },
     {
       "file": "4-phone.png",
       "height": 844,
-      "view": "Beranda di ukuran telepon 390x844: navigasi dan KPI menumpuk rapi",
+      "view": "Halaman Kalkulator di ukuran telepon 390x844: slider 50/30/20 dan hasil vs kenyataan",
       "width": 390
     }
   ]
