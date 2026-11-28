@@ -243,16 +243,14 @@ export function viewReport(state) {
       <tbody>${HISTORY.map((h) => `<tr><td>${h.month} 2026</td><td class="num">${fmtRp(h.income)}</td><td class="num">${fmtRp(h.expense)}</td><td class="num"><strong>${fmtRp(h.income - h.expense)}</strong></td></tr>`).join('')}</tbody></table></div>
     </article>
     <article class="card">
+      <h2>Tiga bulan paling hemat</h2>
+      <ol class="rank-list">
+        ${[...HISTORY].map((h) => ({ ...h, left: h.income - h.expense })).sort((a, b) => b.left - a.left).slice(0, 3).map((h, i) => `<li><strong>${{ Jun: 'Juni', Jul: 'Juli', Agu: 'Agustus', Sep: 'September', Okt: 'Oktober', Nov: 'November' }[h.month]} 2026</strong> — sisa ${fmtRp(h.left)}${i === 0 ? ' (pengeluaran terendah)' : ''}</li>`).join('')}
+      </ol>
       <h2>Per kategori — November</h2>
       <div class="table-wrap"><table class="tx"><thead><tr><th>Kategori</th><th class="num">Belanja</th><th class="num">Anggaran</th><th class="num">Sisa</th></tr></thead>
       <tbody>${rows.map((c) => `<tr><td>${c.icon} ${esc(c.name)}</td><td class="num">${fmtRp(spent[c.id] || 0)}</td><td class="num">${fmtRp(c.budget)}</td><td class="num">${fmtRp(Math.max(0, c.budget - (spent[c.id] || 0)))}</td></tr>`).join('')}</tbody></table></div>
       <p class="muted">Total belanja ${fmtRp(expense)} dari pemasukan ${fmtRp(income)} — ${Math.round((expense / income) * 100)}% pemasukan terpakai, ${Math.round(((income - expense) / income) * 100)}% tersisa.</p>
-      <h2>Tiga bulan paling hemat</h2>
-      <ol class="rank-list">
-        <li><strong>November 2026</strong> — sisa ${fmtRp(13700000 - 7446200)} (pengeluaran terendah)</li>
-        <li><strong>September 2026</strong> — sisa ${fmtRp(13700000 - 9438000)}</li>
-        <li><strong>Juli 2026</strong> — sisa ${fmtRp(13200000 - 9586000)}</li>
-      </ol>
     </article>
   </section>`;
 }
